@@ -34,8 +34,8 @@ def displayContent(itemList):
     print("----------------------------------------")
     for item in itemList:
         print(f"Item: {item.getFoodName()}")
-        print(f"Amount: {item.getAmtFood()}")
-        print(f"Price per pound: ${"{:,.2f}".format(item.getStdPrice())} pounds")
+        print(f"Amount: {item.getAmtFood()} pounds")
+        print(f"Price per pound: ${"{:,.2f}".format(item.getStdPrice())}")
         print(f"Price of order: ${"{:,.2f}".format(item.getCalcPrice())}")
         print("\n")
 
